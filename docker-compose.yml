@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  jekyll:
+    image: martina
+    build: .
+    volumes:
+      - .:/site
+    ports:
+      - '100:4000'
